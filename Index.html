@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art gallery By Lalita</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div  id="model" class="model">
+        <div id="modelbx" class="modelbox w100">
+            <h2 id="modelHeading">demo</h2>
+            <hr>
+            <p id="modeltext" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe magnam ut quos ipsam tenetur. Aliquid
+                illum accusantium, reprehenderit eveniet officia debitis, temporibus error veritatis praesentium eaque
+                repudiandae consectetur itaque ducimus.
+            </p>
+
+            <button onclick="modelFunction(0)">close</button>
+        </div>
+    </div>
+    <header class="main">
+        <nav class="container InnerHeader">
+            <div class="logo">Lalita's Image gallery</div>
+
+            <a href="https://github.com/lalitadogra/artygallery.git" target="_blank">
+                <button class="srcode">Source Code</button>
+            </a>
+        </nav>
+    </header>
+
+    <section class="main hero-section">
+        <div class="inner-herosection container">
+            <span class="heroTitle">Indian monuments</span>
+
+        </div>
+    </section>
+    <main>
+
+        <section class="container gallery">
+
+            <div class="imgcard" onclick="modelFunction(1)">
+                <img src="./img/tajmahal.jpg" height="200" alt="img">
+                <div class="title">
+                    Taj Mahal
+                    <span class="click">click for more info</span>
+
+                </div>
+            </div>
+
+            <div class="imgcard" onclick="modelFunction(2)">
+                <img src="./img/kutubminar.jpg" height="200" alt="img">
+                <div class="title">
+                    Qutub Minar
+                    <span class="click">click for more info</span>
+
+                </div>
+            </div>
+            <div class="imgcard" onclick="modelFunction(3)">
+                <img src="./img/humayuntomb.jpg" height="200" alt="img">
+                <div class="title">
+                    Humayun's tomb
+                    <span class="click">click for more info</span>
+
+                </div>
+            </div>
+
+            <div class="imgcard" onclick="modelFunction(4)">
+                <img src="./img/redfort.avif" height="200" alt="img">
+                <div class="title">
+                    Red Fort
+                    <span class="click">click for more info</span>
+
+                </div>
+            </div>
+
+            <div class="imgcard" onclick="modelFunction(5)">
+                <img src="./img/indiagate.jpg" height="200" alt="img">
+                <div class="title">
+                    India Gate
+                    <span class="click">click for more info</span>
+
+                </div>
+            </div>
+            <div class="imgcard " onclick="modelFunction(6)">
+                <img src="./img/amerfort.jpeg" height="200" alt="img">
+                <div class="title">
+                    Amer Fort
+                    <span class="click">click for more info</span>
+
+                </div>
+            </div>
+
+
+            <div class="imgcard" onclick="modelFunction(7)">
+                <img src="./img/jamamasjid.jpeg" height="200" alt="img">
+                <div class="title">
+                    Jama Masjid
+                    <span class="click">click for more info</span>
+
+                </div>
+            </div>
+
+            <div class="imgcard" onclick="modelFunction(8)">
+                <img src="./img/Sanchistupa.jpeg" height="200" alt="img">
+                <div class="title">
+                    Sanchi Stupa
+                    <span class="click">click for more info</span>
+
+                </div>
+
+            </div>
+            <div class="imgcard" onclick="modelFunction(9)">
+                <img src="./img/agrafrot.avif" height="200" alt="img">
+                <div class="title">
+                    <p>Agra Fort</p>
+
+                    <span class="click">click for more info</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <a href="https://lalitaa.netlify.app/" target="_blank">
+                Developed By Lalita
+            </a>
+        </footer>
+    </main>
+
+    <script>
+
+        const element = document.getElementById("model");
+        const Heading = document.getElementById("modelHeading");
+        const dis = document.getElementById("modeltext");
+
+        const data = [
+            {
+
+            },
+            {
+                title : "Taj Mahal",
+                dis : "The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan (reigned from 1628 to 1658), to house the tomb of his favourite wife, Mumtaz Mahal."
+            },
+            {
+                title : "Qutub Minar",
+                dis : "Built of red and buff sandstone and eloquently carved with inscriptional bands, the Qutb Minar is the tallest masonry tower in India, measuring 72.5 metres high, with projecting balconies for calling all Muadhdhin to prayer."
+            },
+            {
+                title : "Humayun's tomb",
+                dis : "The tomb of Humayun, second Mughal Emperor of India, was built by his widow, Biga Begum (Hajji Begum), in 1569-70, 14 years after his death, at a cost of 1.5 million rupees. The architect was Mirak Mirza Ghiyath. It was later used for the burial of various members of the ruling family and contains some 150 graves."
+            },
+            {
+                title : "Red Fort",
+                dis : "The Red Fort Complex was built as the palace fort of Shahjahanabad – the new capital of the fifth Mughal Emperor of India, Shah Jahan. Named for its massive enclosing walls of red sandstone, it is adjacent to an older fort, the Salimgarh, built by Islam Shah Suri in 1546, with which it forms the Red Fort Complex."
+            },
+            {
+                title : "India Gate",
+                dis : "India Gate, which is located at the eastern end of the Rajpath (formerly called the Kingsway), is about 138 feet (42 metres) in height. India Gate is one of many British monuments built by order of the Imperial War Graves Commission (later renamed Commonwealth War Graves Commission)."
+            },
+            {
+                title : "Amer Fort",
+                dis : "One of the top tourist attractions of Jaipur, the huge Amer Palace Fort sits atop a small hill, and is located at a distance about 11 km from the main city. The magnificent Amer Fort is an extensive palace complex that has been built with pale yellow and pink sandstone, and with white marble."
+            },
+            {
+                title : "Jama masjid",
+                dis : "One of the largest mosques in India, Jama Masjid is situated in Old Delhi. Its construction was started in 1644 and completed by Mughal emperor Shah Jahan. Made of red sandstone and marble, this gorgeous mosque is also called Masjid-I-Jahanuma, meaning the mosque commanding the view of the world."
+            },
+            {
+                title : "sanchi stupa",
+                dis : "The Great Stupa at Sanchi is one of the oldest stone structures in India, and an important monument of Indian Architecture. It was originally commissioned by the Mauryan emperor Ashoka the Great in the 3rd century BCE. Its nucleus was a simple hemispherical brick structure built over the relics of the Buddha."
+            },
+            {
+                title : "Agra Fort",
+                dis : "Agra Fort is a historical fort in the city of Agra in India. It was the main residence of the emperors of the Mughal Dynasty till 1638, when the capital was shifted from Agra to Delhi. The Agra fort is a UNESCO World Heritage site.It is about 2.5 km northwest of its more famous sister monument, the Taj Mahal."
+            }]
+
+        function modelFunction(content){
+            if (content === 0){
+                element.classList.toggle("show");
+                return;
+            }
+            Heading.innerText = data[content].title;
+            dis.innerText = data[content].dis;
+            element.classList.toggle("show");
+        }
+    </script>
+
+</body>
+
+</html>
